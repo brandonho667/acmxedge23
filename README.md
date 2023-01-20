@@ -1,8 +1,5 @@
 # ACMxEDGE 2023 Workshop
 
-This is the main repository for ACMxEDGE @ UCSD's workshop in Winter 2023.
+## CSS Exercise
 
-## Slides
-
-TBD
-
+Copy the files to your directory and try to match the solution!
