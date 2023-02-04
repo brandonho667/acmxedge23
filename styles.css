@@ -1,0 +1,112 @@
+* {
+    /* we set no margin and no padding for ease of formatting */
+    margin: 0;
+    padding: 0;
+    /* primary and secondary fonts */
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .navbar {
+    background: #131313;
+    height: 80px;
+    /* flex lets us use positioning attributes */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    /* sticky makes the navbar not move when you scroll */
+    position: sticky;
+    /* z-index represents the layer this element is on */
+    /* the higher the z-index, the higher the layer */
+    /* higher layers show over lower layers */
+    /* we don't want anything blocking the navbar so we set this high */
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    /* space-between makes even spacing amongst child elements */
+    justify-content: space-between;
+    height: 80px;
+    /* We want the navbar to fill the top of the window */
+    /* hence width is 100% with a max-width setting */
+    width: 100%;
+    max-width: 1300px;
+    /* set padding so when you view on a narrow screen */
+    /* There's space between the edge of the window and */
+    /* the content. */
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  #navbar__logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    /* both attributes clip the background to text */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    /* set the text to transparent to see the gradient background */
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    /* when the cursor hovers, we want it to be a pointer */
+    cursor: pointer;
+    /* Don't want the underline and blue color for links */
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .fa-diamond {
+    margin-right: 0.5rem;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* no bullets */
+    list-style: none;
+    text-align: center;
+  }
+
+  .navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* padding for top/bot and left/right */
+    padding: 0 1rem;
+  }
+  
+  .navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
+  }
+  
+  .button:hover {
+    background: #4837ff;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    color: #f77062;
+    transition: all 0.3s ease;
+  }
