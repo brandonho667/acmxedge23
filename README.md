@@ -1,3 +1,3 @@
 # ACMxEDGE 2023 Workshop
 
-This is the navbar HTML template.
+This is the navbar HTML template w/ CSS.
